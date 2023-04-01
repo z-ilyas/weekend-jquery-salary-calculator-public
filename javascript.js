@@ -1,4 +1,4 @@
-$(Document).ready(onReady);
+$(document).ready(onReady);
 
 function onReady() {
     

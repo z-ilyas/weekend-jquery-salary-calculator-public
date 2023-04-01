@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">    
     <script src="jquery.js"></script>
     <script src="javascript.js"></script>
     <title>Document</title>
@@ -14,21 +15,36 @@
 </header>
     <h2>Add Employee</h2>
     <form>
-        <input type="First Name">
-        <input type="Last Name">
-        <input type="ID">
-        <input type="Title">
-        <input type="Annual Salary">
+        <input placeholder="First Name" type="text">
+        <input placeholder="Last Name" type="text">
+        <input placeholder="ID" type="text">
+        <input placeholder="Title" type="text">
+        <input placeholder="Annual Salary" type="text">
     </form>
-    <button>submit</button>
+    <button id="submit-btn">submit</button>
     <h2>Employee</h2>
-    <tbody>
-        <th>First Name</th>
-        <th>Last Name</th>
-        <th>ID</th>
-        <th>Annual Salary</th>
-        <th></th>
-    </tbody>
-<footer>Total Monthly: $15500.00</footer>
+    <table>
+        <thead>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>ID</th>
+                <th>Annual Salary</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>Ilyas</th>
+                <th>Mohamed</th>
+                <th>95698</th>
+                <th>$100,000</th>
+                <th>✅</th>
+            </tr>
+        </tbody>
+    </table>
+<footer>
+    <h3>Total Monthly: $0</h3>
+</footer>
 </body>
 </html>

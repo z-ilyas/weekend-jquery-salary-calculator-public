@@ -1,0 +1,23 @@
+table {
+    width: 100%;    
+    text-align: left;
+}
+table, th, tbody{
+    border: 1px solid black;
+    border-collapse: collapse;
+    height: 2em;
+}
+
+thead {
+    background-color:lightgrey;
+    padding: .25em;
+}
+
+body{
+    background-color: aqua;
+}
+
+tbody{
+    background-color: white;
+}
+
