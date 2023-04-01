@@ -1,1 +1,5 @@
-console.log('jj');
+$(Document).ready(onReady);
+
+function onReady() {
+    
+}
