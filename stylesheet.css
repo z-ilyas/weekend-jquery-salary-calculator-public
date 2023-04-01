@@ -2,7 +2,7 @@ table {
     width: 100%;    
     text-align: left;
 }
-table, th, tbody{
+table, th, td, tbody{
     border: 1px solid black;
     border-collapse: collapse;
     height: 2em;
@@ -17,7 +17,8 @@ body{
     background-color: aqua;
 }
 
-tbody{
+td{
     background-color: white;
+   
 }
 
