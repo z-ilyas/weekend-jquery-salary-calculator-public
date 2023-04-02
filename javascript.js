@@ -4,6 +4,7 @@ function onReady() {
 
 $('#submit-btn').on('click', submitInfo);  
 $('#employee-Info').on('click','.delete-btn', deleteRow);
+
 }
 
 function submitInfo(event){
@@ -38,15 +39,23 @@ $('#employee-Info').append(`
 </tr>
 `);
 
-
-
 let monthlyCost = Number($('#monthly-cost').text());
-let monthlySalary = monthlyCost + annualSalaryInput/12;
-
+let monthlySalary = monthlyCost + annualSalary/12;
 $('#monthly-cost').text(monthlySalary);
 
+
+if(monthlySalary > 20000){
+$('h4').css('background-color','red');
 }
+}
+
 
 function deleteRow() {
 $(this).parent().parent().remove()
 }
+
+
+
+
+
+

@@ -1,24 +1,40 @@
+body{
+    background-color: lightblue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1em;
+    color: black;
+    display: flex;
+    flex-direction: column;
+}
+header{
+    text-align: center;
+    background-color: greenyellow;
+    height: 6em;
+}
 table {
-    width: 80%;    
+    width: 100%;    
     text-align: left;
 }
 table, th, td, tbody{
     border: 1px solid black;
     border-collapse: collapse;
     height: 2em;
+    text-align: center;
 }
 
 thead {
     background-color:lightgrey;
-    padding: .25em;
-}
-
-body{
-    background-color: aqua;
 }
 
 td{
     background-color: white;
-   
+   padding: .5em;
 }
+
+footer{
+    text-align: right;
+    
+}
+
+
 
