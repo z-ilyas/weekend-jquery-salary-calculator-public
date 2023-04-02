@@ -1,5 +1,6 @@
 body{
-    background-color: lightblue;
+    background: rgb(128,18,203);
+    background: linear-gradient(90deg, rgba(128,18,203,1) 0%, rgba(9,42,121,1) 36%, rgba(30,130,56,1) 100%);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 1em;
     color: black;
