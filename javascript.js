@@ -43,10 +43,10 @@ let monthlyCost = Number($('#monthly-cost').text());
 let monthlySalary = monthlyCost + annualSalary/12;
 $('#monthly-cost').text(monthlySalary);
 
-
 if(monthlySalary > 20000){
 $('h4').css('background-color','red');
 }
+
 }
 
 
