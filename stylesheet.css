@@ -13,7 +13,6 @@ header{
 }
 table {
     width:auto;    
-    text-align: left;
 }
 table, th, td, tbody{
     border: 2px solid black;
@@ -24,6 +23,7 @@ table, th, td, tbody{
 th{
     background-color: rgb(25, 218, 185);
     padding: .5em;
+    text-align: left;
 }
 
 td{
@@ -36,6 +36,8 @@ footer{
     text-align: right;
 }
 
-
+.delete-btn{
+    margin: auto;
+}
 
 

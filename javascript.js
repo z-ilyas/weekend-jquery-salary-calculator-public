@@ -35,7 +35,7 @@ $('#employee-Info').append(`
     <td>${id}</td>
     <td>${title}</td>
     <td>$${annualSalary}</td>
-    <td><button class="delete-btn">Delete</button></td>
+    <td align="center"><button class="delete-btn">Delete</button></td>
 </tr>
 `);
 
