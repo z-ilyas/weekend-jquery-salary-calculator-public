@@ -10,31 +10,25 @@ $('#employee-Info').on('click','.delete-btn', deleteRow);
 function submitInfo(event){
 event.preventDefault();
 
-let firstNameInput = $('#firstName-Input')
-let lastNameInput = $('#lastName-Input')
-let idInput = $('#id-Input')
-let titleInput = $('#title-Input')
-let annualSalaryInput = $('#annualSalary-Input')
+let firstNameInput = $('#firstName-Input').val();
+let lastNameInput = $('#lastName-Input').val();
+let idInput = $('#id-Input').val();
+let titleInput = $('#title-Input').val();
+let annualSalaryInput = $('#annualSalary-Input').val();
 
-let firstName = firstNameInput.val();
-let lastName = lastNameInput.val();
-let id = idInput.val();
-let title =titleInput.val();
-let annualSalary = annualSalaryInput.val();
-
-firstNameInput.val('');
-lastNameInput.val('');
-idInput.val('');
-titleInput.val('');
-annualSalaryInput.val('');
+$('#firstName-Input').val('');
+$('#lastName-Input').val('');
+$('#id-Input').val('');
+$('#title-Input').val('');
+$('#annualSalary-Input').val('');
 
 $('#employee-Info').append(`
 <tr>
-    <td>${firstName}</td>
-    <td>${lastName}</td>
-    <td>${id}</td>
-    <td>${title}</td>
-    <td align="right">$ ${annualSalary}</td>
+    <td>${firstNameInput}</td>
+    <td>${lastNameInput}</td>
+    <td>${idInput}</td>
+    <td>${titleInput}</td>
+    <td align="right">$ ${annualSalaryInput}</td>
     <td align="center"><button class="delete-btn">Delete</button></td>
 </tr>
 `);
