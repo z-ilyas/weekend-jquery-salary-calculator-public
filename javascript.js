@@ -24,32 +24,36 @@ $('#id-Input').val('');
 $('#title-Input').val('');
 $('#annualSalary-Input').val('');
 
-let renderDom = renderDom(inputs);
-let getMonthlySalarty = getMonthlySalarty();
-let overBudget = overBudget();
+renderDom(inputs);
+let monthlyCost = Number($('#monthly-cost').text());
+let monthlysalary = monthlyCost + inputs.annualSalaryInput/12;
+calculate(monthlysalary);
+turnRed(monthlysalary);
+
 }
 
-function renderDom(inputs) {
+function renderDom(object) {
 return $('#employee-Info').append(`
 <tr>
-    <td>${inputs.firstNameInput}</td>
-    <td>${inputs.lastNameInput}</td>
-    <td>${inputs.idInput}</td>
-    <td>${inputs.titleInput}</td>
-    <td align="right">$ ${inputs.annualSalaryInput}</td>
+    <td>${object.firstNameInput}</td>
+    <td>${object.lastNameInput}</td>
+    <td>${object.idInput}</td>
+    <td>${object.titleInput}</td>
+    <td align="right">$ ${object.annualSalaryInput}</td>
     <td align="center"><button class="delete-btn">Delete</button></td>
 </tr>
 `);
 }
-function getMonthlySalarty() {
-    let monthlyCost = Number($('#monthly-cost').text());
-    let monthlySalary = monthlyCost + annualSalary/12;
-    return $('#monthly-cost').text(monthlySalary);
-}
-function overBudget() {
-    if(monthlySalary > 20000){
+function calculate(budget) {
+    if(budget > 20000){
     $('h4').css('background-color','red');
+    }
+    return $('#monthly-cost').text(budget);
 }
+function overBudget(budget) {
+    if(budget > 20000){
+    return $('h4').css('background-color','red');
+    }
 }
 function deleteRow() {
 $(this).parent().parent().remove()
